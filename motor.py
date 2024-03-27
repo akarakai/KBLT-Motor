@@ -27,4 +27,4 @@ class Motor:
         self.pulse_pin.write(False)
         self.pulse_pin.close()
         self.direction_pin.close()
-        LOGGER.debug("Motor turned off")
+        LOGGER.debug("Motor turned OFF")
