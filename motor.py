@@ -4,13 +4,11 @@ import time
 
 
 class Motor:
-    def __init__(self, pulse_pin, direction_pin, steps):
-        self.pulse_duration = 0.001
+    def __init__(self, pulse_pin, direction_pin):
         self.dead_duration = 1
 
         self.pulse_pin = GPIO(pulse_pin, "out")
         self.direction_pin = GPIO(direction_pin, "out")
-        self.steps = steps
         LOGGER.debug("Motor initialized")
 
     def turn_motor(self, pulse_duration):
